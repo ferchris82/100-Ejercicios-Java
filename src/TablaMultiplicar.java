@@ -14,7 +14,7 @@ public class TablaMultiplicar {
         System.out.println("La tabla de multiplicar del 10 es: ");
         for(int i = 0; i<=10; i++){
             int resultado = num*i;
-            System.out.println(num + "x" + i + "= " + resultado);
+            System.out.println(num + " * " + i + " = " + resultado);
         }
     }
 
