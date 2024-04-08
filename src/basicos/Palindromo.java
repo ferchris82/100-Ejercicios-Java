@@ -16,7 +16,7 @@ public class Palindromo {
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingresa una cadena");
         sc.useDelimiter("\n");
-        String cadena = sc.nextLine();
+        String cadena = sc.nextLine().trim();
         String cadenaInvertida = "";
 
         char caracter;
