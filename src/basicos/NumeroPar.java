@@ -1,3 +1,4 @@
+package basicos;
 public class NumeroPar {
 
     /* Mostrar los números pares que hay entre el 1 y 10 (while y for) */
