@@ -56,8 +56,20 @@ public class MiniCalculadora {
                         System.out.println("El resultado de la multiplicación es: " + (num1 * num2));
                         break;
                     case 4:
-                        System.out.println("El resultado de la división es: " + (num1 / num2));
-                        break;
+                        if (num2 == 0) {
+                            System.out.println("No puedes dividir entre 0");
+                            System.out.println("Inserta el segundo numero otra vez");
+                            num2 = sc.nextInt();
+                            double div = ((double) (num1 / num2));
+                            System.out.println("El resultado de la división es: " + div);
+                            break;
+                        } else{
+                            double doublenum1 = (double)num1;
+                            double doublenum2 = (double)num2;
+
+                            System.out.println("El resultado de la división es: " + (doublenum1 / doublenum2));
+                            break;
+                        }
                     case 5:
                         System.out.println("El resultado del modulo es: " + (num1 % num2));
                         break;
