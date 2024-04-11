@@ -42,7 +42,7 @@ public class CalculaSalario {
             switch (p) {
                 case VENDEDOR -> salarioFinal += 500;
                 case DIRECTOR -> salarioFinal += 1000;
-                case CONSERJE -> salarioFinal += 500;          
+                case CONSERJE -> salarioFinal += 100;          
             }
             System.out.println("El salario final es " + salarioFinal);
 
