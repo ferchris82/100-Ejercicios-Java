@@ -1,0 +1,147 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "AdivinaNumero",
+            "request": "launch",
+            "mainClass": "basicos.AdivinaNumero",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "Bisiesto",
+            "request": "launch",
+            "mainClass": "basicos.Bisiesto",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "Concatenacion",
+            "request": "launch",
+            "mainClass": "basicos.Concatenacion",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "Ecuacion2Grado",
+            "request": "launch",
+            "mainClass": "basicos.Ecuacion2Grado",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "GeneraNumerosAleatorios",
+            "request": "launch",
+            "mainClass": "basicos.GeneraNumerosAleatorios",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "Horas",
+            "request": "launch",
+            "mainClass": "basicos.Horas",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "InvertirCadena",
+            "request": "launch",
+            "mainClass": "basicos.InvertirCadena",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "Menor",
+            "request": "launch",
+            "mainClass": "basicos.Menor",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "MiniCalculadora",
+            "request": "launch",
+            "mainClass": "basicos.MiniCalculadora",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "NumeroPar",
+            "request": "launch",
+            "mainClass": "basicos.NumeroPar",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "NumeroPerfecto",
+            "request": "launch",
+            "mainClass": "basicos.NumeroPerfecto",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "Operaciones",
+            "request": "launch",
+            "mainClass": "basicos.Operaciones",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "Palindromo",
+            "request": "launch",
+            "mainClass": "basicos.Palindromo",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "PrecioIva",
+            "request": "launch",
+            "mainClass": "basicos.PrecioIva",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "RecorrerCadena",
+            "request": "launch",
+            "mainClass": "basicos.RecorrerCadena",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "TablaMultiplicar",
+            "request": "launch",
+            "mainClass": "basicos.TablaMultiplicar",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "ValidarNumero",
+            "request": "launch",
+            "mainClass": "basicos.ValidarNumero",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "CalculaSalario",
+            "request": "launch",
+            "mainClass": "basicos.calculaSalario.CalculaSalario",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio1",
+            "request": "launch",
+            "mainClass": "funciones.Ejercicio1",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        }
+    ]
+}
