@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NumeroPar",
+            "request": "launch",
+            "mainClass": "funciones.NumeroPar",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "GenerarNumeroAleatorio",
+            "request": "launch",
+            "mainClass": "funciones.GenerarNumeroAleatorio",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
