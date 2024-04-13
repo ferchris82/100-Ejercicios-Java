@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "InvertirPalabraPalindromo",
+            "request": "launch",
+            "mainClass": "funciones.InvertirPalabraPalindromo",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
             "name": "ValidarNumero",
             "request": "launch",
             "mainClass": "funciones.ValidarNumero",
