@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GenerarPassword",
+            "request": "launch",
+            "mainClass": "funciones.GenerarPassword",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "DigitoMasAlto",
+            "request": "launch",
+            "mainClass": "funciones.DigitoMasAlto",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
             "name": "CuentaLetras",
             "request": "launch",
             "mainClass": "funciones.CuentaLetras",
