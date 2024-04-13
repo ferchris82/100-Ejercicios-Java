@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DecimalOctal",
+            "request": "launch",
+            "mainClass": "funciones.DecimalOctal",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
             "name": "NumeroPar",
             "request": "launch",
             "mainClass": "funciones.NumeroPar",
