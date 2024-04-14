@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SumaMediaArray",
+            "request": "launch",
+            "mainClass": "Arrays.SumaMediaArray",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
             "name": "RellenarArrayAleatorio",
             "request": "launch",
             "mainClass": "Arrays.RellenarArrayAleatorio",
