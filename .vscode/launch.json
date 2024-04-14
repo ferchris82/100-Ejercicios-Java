@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CrearArrayMostrar",
+            "request": "launch",
+            "mainClass": "Arrays.CrearArrayMostrar",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
             "name": "GenerarPassword",
             "request": "launch",
             "mainClass": "funciones.GenerarPassword",
