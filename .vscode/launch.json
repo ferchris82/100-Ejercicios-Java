@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MayorMenorArray",
+            "request": "launch",
+            "mainClass": "Arrays.MayorMenorArray",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "EqualArray",
+            "request": "launch",
+            "mainClass": "Arrays.EqualArray",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
             "name": "SumaMediaArray",
             "request": "launch",
             "mainClass": "Arrays.SumaMediaArray",
