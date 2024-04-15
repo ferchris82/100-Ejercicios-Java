@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NumeroMasRepetido",
+            "request": "launch",
+            "mainClass": "Arrays.NumeroMasRepetido",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "FusionArrays",
+            "request": "launch",
+            "mainClass": "Arrays.FusionArrays",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
             "name": "CaracteresStringArray",
             "request": "launch",
             "mainClass": "Arrays.CaracteresStringArray",
