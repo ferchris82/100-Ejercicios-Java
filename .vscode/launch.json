@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CaracteresStringArray",
+            "request": "launch",
+            "mainClass": "Arrays.CaracteresStringArray",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
             "name": "DigitosArray",
             "request": "launch",
             "mainClass": "Arrays.DigitosArray",
