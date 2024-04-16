@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DiagonalMatriz",
+            "request": "launch",
+            "mainClass": "Matrices.DiagonalMatriz",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "ColumnaMatriz",
+            "request": "launch",
+            "mainClass": "Matrices.ColumnaMatriz",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "FilaMatriz",
+            "request": "launch",
+            "mainClass": "Matrices.FilaMatriz",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
             "name": "RecorreMatriz",
             "request": "launch",
             "mainClass": "Matrices.RecorreMatriz",
