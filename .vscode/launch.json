@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PersonaMayor",
+            "request": "launch",
+            "mainClass": "Arrays.PersonaMayor",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
             "name": "DniNumero",
             "request": "launch",
             "mainClass": "Arrays.DniNumero",
