@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MiniAhorcado",
+            "request": "launch",
+            "mainClass": "Arrays.MiniAhorcado",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
             "name": "PersonaMayor",
             "request": "launch",
             "mainClass": "Arrays.PersonaMayor",
