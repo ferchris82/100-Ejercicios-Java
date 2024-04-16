@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RecorreMatriz",
+            "request": "launch",
+            "mainClass": "Matrices.RecorreMatriz",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
             "name": "MiniAhorcado",
             "request": "launch",
             "mainClass": "Arrays.MiniAhorcado",
