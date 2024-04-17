@@ -44,42 +44,30 @@ public class ReyAjedrez {
                 sc.nextLine();
 
                 switch (opcion) {
-                    case 1:
-                        posActualReyX--;
-                        break;
-                    case 2:
+                    case 1 -> posActualReyX--;
+                    case 2 -> {
                         posActualReyX--;
                         posActualReyY++;
-                        break;
-                    case 3:
-                        posActualReyY++;
-                        break;
-                    case 4:
+                    }
+                    case 3 -> posActualReyY++;
+                    case 4 -> {
                         posActualReyX++;
                         posActualReyY++;
-                        break;
-                    case 5:
-                        posActualReyX++;
-                        break;
-                    case 6:
+                    }
+                    case 5 -> posActualReyX++;
+                    case 6 -> {
                         posActualReyX++;
                         posActualReyY--;
-                        break;
-                    case 7:
-                        posActualReyY--;
-                        break;
-                    case 8:
+                    }
+                    case 7 -> posActualReyY--;
+                    case 8 -> {
                         posActualReyX--;
                         posActualReyY--;
-                        break;
-                    case 9:
-                        salir = true;
-                        break;
-                    default:
-                        System.out.println("Opción inválida. Introduce un número del 1 al 9.");
-                        continue;
+                    }
+                    case 9 -> salir = true;
+                    default -> System.out.println("Opción inválida. Introduce un número del 1 al 9.");
                 }
-
+                
                 // Verificar límites del tablero
                 if (posActualReyX < 0 || posActualReyX >= 8 || posActualReyY < 0 || posActualReyY >= 8) {
                     System.out.println("Movimiento inválido. El rey no puede salir del tablero.");
