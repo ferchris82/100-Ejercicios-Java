@@ -1,4 +1,4 @@
-package Matrices;
+package matrices;
 
 public class MatrizIdentica {
     /*

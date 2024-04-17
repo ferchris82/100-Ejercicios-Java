@@ -1,45 +1,31 @@
-package Matrices.ajedrez;
+package matrices.ajedrez;
 
 import java.util.*;
 
 public class ReyAjedrez {
 
-    /*
-     * Teniendo una matriz de char de 8x8 simular el movimiento de un
-     * rey de ajedrez.
-     * Pudiendose moverse una posición dentro del tablero.
-     * Deberas mostrar donde se encuentra en cada momento.
-     * Mi consejo es que uses un menú.
-     */
-
     public static void main(String[] args) {
 
-        final char VACIO = 'X'; // Fila
-        final char REY = 'O'; // Columna
+        final char VACIO = 'X'; // Casilla vacía
+        final char REY = 'O';   // Rey
 
         char[][] matriz = new char[8][8];
 
+        // Inicializar matriz con casillas vacías
         rellenarMatriz(matriz, VACIO);
 
-        int posActualReyX = 0, postAntiguaReyX = 0;
-        int posActualReyY = 0, postAntiguaReyY = 0;
-
-        
+        // Posición inicial del rey (arriba a la izquierda)
+        int posActualReyX = 0;
+        int posActualReyY = 0;
+        matriz[posActualReyX][posActualReyY] = REY;
 
         Scanner sc = new Scanner(System.in);
         boolean salir = false;
-        int opcion; // Guardaremos la opcion del usuario
 
-        /*
-         * 00 01 02
-         * 10 11 12
-         * 20 21 22
-         */
         while (!salir) {
-
             mostrarMatriz(matriz);
 
-            System.out.println("¿Donde quieres moverte?");
+            System.out.println("¿Dónde quieres moverte?");
             System.out.println("1. Mover arriba");
             System.out.println("2. Mover arriba-derecha");
             System.out.println("3. Mover derecha");
@@ -48,76 +34,85 @@ public class ReyAjedrez {
             System.out.println("6. Mover abajo-izquierda");
             System.out.println("7. Mover izquierda");
             System.out.println("8. Mover arriba-izquierda");
-            System.out.println("9. Mover Salir");
+            System.out.println("9. Salir");
 
+            System.out.println("Escribe una de las opciones:");
             try {
-                System.out.println("Escribe una de las opciones");
-                opcion = sc.nextInt();
+                int opcion = sc.nextInt();
 
-                postAntiguaReyX = posActualReyX;
-                postAntiguaReyY = posActualReyY;
+                // Limpiar el buffer
+                sc.nextLine();
 
                 switch (opcion) {
                     case 1:
                         posActualReyX--;
-
+                        break;
                     case 2:
                         posActualReyX--;
                         posActualReyY++;
-
+                        break;
                     case 3:
                         posActualReyY++;
-
+                        break;
                     case 4:
                         posActualReyX++;
                         posActualReyY++;
-
+                        break;
                     case 5:
                         posActualReyX++;
-
+                        break;
                     case 6:
                         posActualReyX++;
                         posActualReyY--;
-
+                        break;
                     case 7:
                         posActualReyY--;
-
+                        break;
                     case 8:
                         posActualReyX--;
                         posActualReyY--;
-
+                        break;
                     case 9:
                         salir = true;
-
+                        break;
                     default:
-                        System.out.println("Solo números entre 1 y 9");
+                        System.out.println("Opción inválida. Introduce un número del 1 al 9.");
+                        continue;
                 }
 
+                // Verificar límites del tablero
+                if (posActualReyX < 0 || posActualReyX >= 8 || posActualReyY < 0 || posActualReyY >= 8) {
+                    System.out.println("Movimiento inválido. El rey no puede salir del tablero.");
+                    posActualReyX = posActualReyX < 0 ? 0 : (posActualReyX >= 8 ? 7 : posActualReyX);
+                    posActualReyY = posActualReyY < 0 ? 0 : (posActualReyY >= 8 ? 7 : posActualReyY);
+                    continue;
+                }
+
+                // Actualizar la matriz con la nueva posición del rey
                 matriz[posActualReyX][posActualReyY] = REY;
-                matriz[posActualReyX][posAntiguaReyY] = VACIO;
+                matriz[posActualReyX - (posActualReyX == 0 ? 0 : 1)][posActualReyY - (posActualReyY == 0 ? 0 : 1)] = VACIO;
 
             } catch (InputMismatchException e) {
-                System.out.println("Debes insertar un número");
-                sc.next();
+                System.out.println("Debes insertar un número.");
+                sc.nextLine(); // Limpiar el buffer
             }
         }
     }
 
     public static void mostrarMatriz(char[][] matriz) {
         for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[0].length; j++) {
-                System.out.println(matriz[i][j] + " ");
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.print(matriz[i][j] + " ");
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 
     public static void rellenarMatriz(char[][] matriz, char simbolo) {
         for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[0].length; j++) {
-                matriz[i][j] = 'X';
+            for (int j = 0; j < matriz[i].length; j++) {
+                matriz[i][j] = simbolo;
             }
         }
     }
-
 }

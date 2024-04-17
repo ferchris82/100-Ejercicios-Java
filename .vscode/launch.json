@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ReyAjedrez",
+            "request": "launch",
+            "mainClass": "matrices.ajedrez.ReyAjedrez",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
+            "name": "ReyAjedrez",
+            "request": "launch",
+            "mainClass": "Matrices.ajedrez.ReyAjedrez",
+            "projectName": "100-Ejercicios-Java_bbdad58"
+        },
+        {
+            "type": "java",
             "name": "MatrizIdentica",
             "request": "launch",
             "mainClass": "Matrices.MatrizIdentica",
