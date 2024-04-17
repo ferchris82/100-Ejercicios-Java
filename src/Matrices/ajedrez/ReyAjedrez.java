@@ -43,42 +43,46 @@ public class ReyAjedrez {
                 // Limpiar el buffer
                 sc.nextLine();
 
+                int nuevaPosX = posActualReyX;
+                int nuevaPosY = posActualReyY;
+
                 switch (opcion) {
-                    case 1 -> posActualReyX--;
+                    case 1 -> nuevaPosX--;
                     case 2 -> {
-                        posActualReyX--;
-                        posActualReyY++;
+                        nuevaPosX--;
+                        nuevaPosY++;
                     }
-                    case 3 -> posActualReyY++;
+                    case 3 -> nuevaPosY++;
                     case 4 -> {
-                        posActualReyX++;
-                        posActualReyY++;
+                        nuevaPosX++;
+                        nuevaPosY++;
                     }
-                    case 5 -> posActualReyX++;
+                    case 5 -> nuevaPosX++;
                     case 6 -> {
-                        posActualReyX++;
-                        posActualReyY--;
+                        nuevaPosX++;
+                        nuevaPosY--;
                     }
-                    case 7 -> posActualReyY--;
+                    case 7 -> nuevaPosY--;
                     case 8 -> {
-                        posActualReyX--;
-                        posActualReyY--;
+                        nuevaPosX--;
+                        nuevaPosY--;
                     }
                     case 9 -> salir = true;
                     default -> System.out.println("Opción inválida. Introduce un número del 1 al 9.");
                 }
-                
-                // Verificar límites del tablero
-                if (posActualReyX < 0 || posActualReyX >= 8 || posActualReyY < 0 || posActualReyY >= 8) {
-                    System.out.println("Movimiento inválido. El rey no puede salir del tablero.");
-                    posActualReyX = posActualReyX < 0 ? 0 : (posActualReyX >= 8 ? 7 : posActualReyX);
-                    posActualReyY = posActualReyY < 0 ? 0 : (posActualReyY >= 8 ? 7 : posActualReyY);
-                    continue;
-                }
 
-                // Actualizar la matriz con la nueva posición del rey
-                matriz[posActualReyX][posActualReyY] = REY;
-                matriz[posActualReyX - (posActualReyX == 0 ? 0 : 1)][posActualReyY - (posActualReyY == 0 ? 0 : 1)] = VACIO;
+                // Verificar límites del tablero
+                if (nuevaPosX >= 0 && nuevaPosX < 8 && nuevaPosY >= 0 && nuevaPosY < 8) {
+                    // Limpiar posición anterior del rey
+                    matriz[posActualReyX][posActualReyY] = VACIO;
+                    // Actualizar posición del rey
+                    matriz[nuevaPosX][nuevaPosY] = REY;
+                    // Actualizar posición actual del rey
+                    posActualReyX = nuevaPosX;
+                    posActualReyY = nuevaPosY;
+                } else {
+                    System.out.println("Movimiento inválido. El rey no puede salir del tablero.");
+                }
 
             } catch (InputMismatchException e) {
                 System.out.println("Debes insertar un número.");
